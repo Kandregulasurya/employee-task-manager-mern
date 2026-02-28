@@ -20,9 +20,9 @@ app.options("*", cors());
 
 app.use(express.json());
 
-app.use("/api/auth", require("./routes/authRoutes"));
-app.use("/api/tasks", require("./routes/taskRoutes"));
-app.use("/api/users", require("./routes/userRoutes"));
+app.use("/auth", require("./routes/authRoutes"));
+app.use("/tasks", require("./routes/taskRoutes"));
+app.use("/users", require("./routes/userRoutes"));
 
 app.listen(process.env.PORT || 5000, () =>
   console.log(`Server running on port ${process.env.PORT}`)
