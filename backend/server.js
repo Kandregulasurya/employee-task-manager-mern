@@ -7,13 +7,16 @@ connectDB();
 
 const app = express();
 
-// ✅ Proper CORS Configuration
+// ✅ Allow your frontend domain
 app.use(cors({
-  origin: "https://frontend-hgw1.onrender.com", // your frontend URL
-  methods: ["GET", "POST", "PUT", "DELETE"],
+  origin: "https://frontend-hgw1.onrender.com",
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true
 }));
+
+// ✅ Handle preflight requests explicitly
+app.options("*", cors());
 
 app.use(express.json());
 
