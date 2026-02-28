@@ -1,0 +1,99 @@
+:root {
+  --primary: #6a0dad;
+  --secondary: #9b5de5;
+  --light: #f3e8ff;
+  --dark: #4b0082;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--light);
+}
+
+.navbar {
+  background: var(--primary);
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logout-btn {
+  background: white;
+  color: var(--primary);
+}
+
+.container {
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stats {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: var(--secondary);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  text-align: center;
+}
+
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--dark);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th {
+  background: var(--primary);
+  color: white;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}

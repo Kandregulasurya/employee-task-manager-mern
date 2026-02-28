@@ -1,0 +1,40 @@
+/* ===============================
+   THEME VARIABLES (Modern Corporate Blue)
+================================= */
+
+:root {
+  /* Primary Brand */
+  --primary: #3b82f6;          /* Softer modern blue */
+  --primary-dark: #1d4ed8;     /* Strong action blue */
+  --gradient-start: #3b82f6;
+  --gradient-end: #1e40af;
+
+  /* Danger */
+  --danger: #ef4444;
+  --danger-dark: #b91c1c;
+
+  /* Backgrounds */
+  --bg-light: #f1f5f9;         /* Soft slate background */
+  --bg-card: #ffffff;
+
+  /* Text */
+  --text-dark: #0f172a;        /* Rich dark slate */
+  --text-light: #ffffff;
+
+  /* Borders */
+  --border-light: #e2e8f0;     /* Cleaner soft border */
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg-main);
+  color: var(--text-dark);
+}
