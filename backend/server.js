@@ -7,7 +7,6 @@ connectDB();
 
 const app = express();
 
-// ✅ Proper CORS Setup
 const allowedOrigins = [
   "http://localhost:5173",
   "https://frontend-hgw1.onrender.com"
@@ -26,14 +25,9 @@ app.use(cors({
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
-// ✅ Important for preflight
-app.options("*", cors());
-
 app.use(express.json());
 
-// ✅ Keep only ONE auth route (clean structure)
 app.use("/api/auth", require("./routes/authRoutes"));
-
 app.use("/api/tasks", require("./routes/taskRoutes"));
 app.use("/api/users", require("./routes/userRoutes"));
 
